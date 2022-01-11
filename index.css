@@ -1,18 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 .navbar {
+
   font-weight: 600;
   color: white;
-  font-size: 18px !important;
+  
   background-image: linear-gradient(to right, #ad2fbc, #652488);
+  font-size: 18px !important;
 }
 .navbar-toggler-icon {
   outline: none;
   font-weight: bold;
   font-size: 30px !important;
 }
-.navbar {
-  position: fixed;
-  top: 0 !important;
-}
+
 .first_section {
   display: block;
 }
@@ -20,32 +20,12 @@
   background-image: linear-gradient(to right, #ad2fbc, #652488);
   height: fit-content;
 }
-/* ------------------waves-------------------------- */
-.custom-shape-divider-bottom-1641839927 {
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-  background-image: linear-gradient(to right, #652488, #ad2fbc);
-}
-
-.custom-shape-divider-bottom-1641839927 svg {
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 154px;
-}
-
-.custom-shape-divider-bottom-1641839927 .shape-fill {
-  fill: #ffffff;
-}
-/* ------------------waves-------------------------- */
 .text {
   width: 100%;
   text-align: center;
   padding-top: 50px !important ;
 }
-.text h1 {
-  font-size: 90px;
-}
+
 .text p {
   font-weight: bold;
   font-size: 20px;
@@ -79,25 +59,6 @@
   color: #652488;
 }
 
-/* -------------------second-wave----------------------- */
-.custom-shape-divider-top-1641842370 {
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  background-image: linear-gradient(to right, #ad2fbc, #652488);
-}
-
-.custom-shape-divider-top-1641842370 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 154px;
-}
-
-.custom-shape-divider-top-1641842370 .shape-fill {
-  fill: #ffffff;
-}
-/* -------------------second-wave----------------------- */
 .first_fist_two_parts {
   background-image: linear-gradient(to right, #ad2fbc, #652488);
 }
@@ -193,4 +154,99 @@
 }
 .section_4 {
   background-image: linear-gradient(to right, #ad2fbc, #652488);
+}
+/* -------------- to bottom wave ----------------- */
+.custom-shape-divider-bottom-1641914532 {
+  overflow: hidden;
+  line-height: 0;
+  background-image: linear-gradient(to right, #652488, #ad2fbc);
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1641914532 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 136px;
+}
+
+.custom-shape-divider-bottom-1641914532 .shape-fill {
+  fill: #ffffff;
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .custom-shape-divider-bottom-1641914532 svg {
+    width: calc(133% + 1.3px);
+    height: 136px;
+  }
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-bottom-1641914532 svg {
+    width: calc(141% + 1.3px);
+    height: 69px;
+  }
+}
+/* -------------- to bottom wave ----------------- */
+/* -------------------------to top waves ------------ */
+.custom-shape-divider-top-1641914696 {
+  overflow: hidden;
+  background-image: linear-gradient(to right, #ad2fbc, #652488);
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1641914696 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 136px;
+}
+
+.custom-shape-divider-top-1641914696 .shape-fill {
+  fill: #ffffff;
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .custom-shape-divider-top-1641914696 svg {
+    width: calc(133% + 1.3px);
+    height: 136px;
+  }
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-top-1641914696 svg {
+    width: calc(141% + 1.3px);
+    height: 69px;
+  }
+}
+/* -------------------------to top waves ------------ */
+.contactus{
+  background-image: linear-gradient(to right, #ad2fbc, #652488);
+
+}
+.sendbutton{
+  width: 200px;
+  background-color: #3f3d56;
+  color:white;
+  font-size: 20px;
+  font-weight: bold;
+  border: 2px solid white;
+}
+.social{
+  transition: 0.3s;
+}
+.social:hover{
+  color: lightseagreen;
+  transform: scale(1.2,1.2);
+}
+#navv{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  
 }
