@@ -1,101 +1,252 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+.navbar {
+
+  font-weight: 600;
+  color: white;
+  
+  background-image: linear-gradient(to right, #ad2fbc, #652488);
+  font-size: 18px !important;
 }
-body {
-  position: relative;
-  height: 5000px;
+.navbar-toggler-icon {
+  outline: none;
+  font-weight: bold;
+  font-size: 30px !important;
 }
 
-nav * {
-  color: white !important;
+.first_section {
+  display: block;
 }
-nav {
-  position: fixed;
+.baner {
+  background-image: linear-gradient(to right, #ad2fbc, #652488);
+  height: fit-content;
+}
+.text {
   width: 100%;
-  top: 0;
-  background-color: #202124;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 10;
+  text-align: center;
+  padding-top: 50px !important ;
 }
-nav .both {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-}
-nav .both i {
-  display: none;
-}
-nav ul {
-  display: flex;
-  list-style-type: none;
-  align-items: center;
-}
-#close {
-  display: none;
-}
-nav ul li {
-  min-width: 100px;
+
+.text p {
+  font-weight: bold;
   font-size: 20px;
 }
-nav ul li a {
-  text-decoration: none;
-  font-weight: 600;
-  width: fit-content;
+.text button {
+  width: 250px;
+  height: 60px;
+  border-radius: 50px;
+  background-color: #3f3d56;
+  color: #f2f2f2;
+  font-size: 25px;
+  font-weight: bold;
+  border: 2px solid #f2f2f2;
 }
-nav ul li a::after {
+.main_img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+/* .second_section {
+  margin-top: 350px;
+} */
+#create {
+  color: #652488;
+}
+#design {
+  font-size: 30px;
+}
+#desing_link {
+  font-size: 35px;
+  color: #652488;
+}
+
+.first_fist_two_parts {
+  background-image: linear-gradient(to right, #ad2fbc, #652488);
+}
+.fist_two_parts {
+  background-image: linear-gradient(to right, #ad2fbc, #652488);
+}
+.left {
+  width: 50%;
+  display: grid;
+  place-items: center;
+}
+.grid_after {
+  width: 100px;
+  color: white;
+}
+.grid_after::before {
   content: "";
-  width: 0;
-  margin: auto;
-  height: 3px;
+  width: 100%;
+  height: 6px;
   background-color: white;
   display: block;
+  border-radius: 20px;
+  margin-bottom: 5px;
+}
+.right {
+  width: 50%;
+}
+.cardi {
+  position: relative;
+  box-sizing: border-box;
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+.cardi img {
+  display: block;
+  position: relative;
+}
+
+.cardi .content {
+  position: absolute;
+  top: 0;
+  width: auto;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  transition: 0.5s;
+  opacity: 0;
+}
+.content > * {
+  transform: translateY(50px);
   transition: 0.5s;
 }
-nav ul li a:hover::after {
-  width: 100%;
+.content:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.6);
 }
-@media only screen and (min-width: 0px) and (max-width: 480px) {
-  nav {
-    display: block;
+.content:hover > * {
+  transform: translateY(0);
+}
+
+.content a {
+  text-decoration: none;
+  width: 100px;
+  height: 30px;
+  background-color: #3f3d56;
+  font-weight: 600;
+  display: grid;
+  place-items: center;
+  color: white;
+  border-radius: 20px;
+  border: 2px solid white;
+}
+.cardsmm {
+  text-align: center;
+  color: #652488;
+  transition: 0.5s;
+  border-radius: 20px;
+}
+
+.cardsmm h1 {
+  font-weight: 600;
+  margin: 10px 5px;
+}
+.cardsmm p {
+  color: black;
+  margin-top: -10px;
+  margin: 10px 5px;
+}
+.section_4 {
+  background-image: linear-gradient(to right, #ad2fbc, #652488);
+}
+/* -------------- to bottom wave ----------------- */
+.custom-shape-divider-bottom-1641914532 {
+  overflow: hidden;
+  line-height: 0;
+  background-image: linear-gradient(to right, #652488, #ad2fbc);
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1641914532 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 136px;
+}
+
+.custom-shape-divider-bottom-1641914532 .shape-fill {
+  fill: #ffffff;
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .custom-shape-divider-bottom-1641914532 svg {
+    width: calc(133% + 1.3px);
+    height: 136px;
   }
-  nav .both #open {
-    display: block;
-    font-size: 30px;
-    cursor: pointer;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-bottom-1641914532 svg {
+    width: calc(141% + 1.3px);
+    height: 69px;
   }
-  nav ul {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: #202124;
-    z-index: 20;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s;
-    margin-left: -200%;
+}
+/* -------------- to bottom wave ----------------- */
+/* -------------------------to top waves ------------ */
+.custom-shape-divider-top-1641914696 {
+  overflow: hidden;
+  background-image: linear-gradient(to right, #ad2fbc, #652488);
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1641914696 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 136px;
+}
+
+.custom-shape-divider-top-1641914696 .shape-fill {
+  fill: #ffffff;
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .custom-shape-divider-top-1641914696 svg {
+    width: calc(133% + 1.3px);
+    height: 136px;
   }
-  #close {
-    display: block;
-    color: #f2f2f2;
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 20px;
-    font-size: 30px;
-    cursor: pointer;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-top-1641914696 svg {
+    width: calc(141% + 1.3px);
+    height: 69px;
   }
-  nav ul li {
-    margin: 10px;
-    font-size: 20px;
-  }
+}
+/* -------------------------to top waves ------------ */
+.contactus{
+  background-image: linear-gradient(to right, #ad2fbc, #652488);
+
+}
+.sendbutton{
+  width: 200px;
+  background-color: #3f3d56;
+  color:white;
+  font-size: 20px;
+  font-weight: bold;
+  border: 2px solid white;
+}
+.social{
+  transition: 0.3s;
+}
+.social:hover{
+  color: lightseagreen;
+  transform: scale(1.2,1.2);
+}
+#navv{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  
 }
